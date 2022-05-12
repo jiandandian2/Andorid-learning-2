@@ -78,4 +78,20 @@
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_700"
+        android:text="11111111111111111"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:gravity="center"
+
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableRight="@android:drawable/star_on"
+        />
+
 </LinearLayout>
