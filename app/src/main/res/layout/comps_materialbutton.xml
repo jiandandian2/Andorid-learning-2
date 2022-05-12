@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+
+        app:cornerRadius="50dp"
+        android:text="按钮1号"
+        android:textSize="18dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:text="按钮1号"
+        android:textSize="18dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+
+        app:cornerRadius="50dp"
+        app:icon="@android:drawable/star_on"
+        app:iconTint="#ff0000"
+        app:iconGravity="textTop"
+        />
+    
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/mbgroup1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:checkedButton="@id/mb1"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/mb1"
+
+            android:text="按钮1号"
+            android:textSize="18dp"
+
+            app:cornerRadius="15dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/mb2"
+
+
+            android:text="按钮2号"
+            android:textSize="18dp"
+            android:backgroundTint="#ff0099"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/mb3"
+
+
+            android:text="按钮3号"
+            android:textSize="18dp"
+            android:backgroundTint="#00ff00"
+
+            app:cornerRadius="15dp"
+            />
+
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</LinearLayout>
